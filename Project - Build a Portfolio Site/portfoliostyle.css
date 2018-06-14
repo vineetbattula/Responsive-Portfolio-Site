@@ -1,0 +1,303 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.container {
+    display: flex;
+    padding: 0px 100px 0px 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    }
+
+
+.hdr {                      /*header*/
+    position: relative;
+    top: -10px;
+    }
+
+
+.hdr-items {                /*header-items*/
+    display: flex;
+    padding-right: 10px;
+    }
+
+
+.logo {
+    width: 30%;
+    }
+
+
+#img1 {                     /* image1 resizing*/
+    width: 40%;
+    padding-top: 20px;
+    }
+
+
+.names {                    /* div:flexbox for containing the two headers*/
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 0.4;
+    padding-top: 15px;
+    }
+
+
+hr, #hr2 {                  /*hr tag*/
+    width: 100%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4cb1de;
+    border: 0 none;       
+    }
+
+
+.hr {                       /* class hr*/
+    position: relative;
+    top: -15px;
+    }
+
+
+#hr2 {
+    display: none;
+    }
+
+
+#img2 {
+    width: 100%;
+    height: 300px;
+    }
+    
+
+.article2 {
+    position: relative;   
+    }
+
+
+.orientation {
+    display: flex;
+    position: relative;
+    top: -20px;
+    }
+
+
+.id1 {
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;   
+    }
+
+
+.id2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold
+    }
+  
+   
+.id3 {
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    }
+
+
+.imgsize {
+    max-width: 100%;
+    padding-top: 10px;
+    }
+
+
+figure {
+    margin: 0px;
+    }
+
+
+p {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    }
+
+
+@media only screen and (min-width:769px) and (max-width:1500px )
+{
+    #hr2 {
+     display: none;
+    }
+}
+
+
+/* For Ipad */
+
+@media only screen and (min-width:361px ) and (max-width: 768px)
+{
+    .container {
+        display: flex;
+        padding: 35px 50px 35px 50px;
+        flex-direction: column;
+        }
+
+
+    .logo {
+        width: 80%;
+        }
+
+
+    #hr2 {
+        display: block;
+        margin-top: 25px;
+        }
+
+
+    .names {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1.1;
+        padding-top: 15px;
+        }
+
+
+    h1 {
+        font-size: 1.5em;
+        }
+
+
+    .article2 {
+        position: relative;
+        top: 20px;
+        }
+
+
+    .hr {
+        position: relative;
+        top: 5px;
+        }
+
+
+    #firstarticle {
+        padding-top: 30px;
+        }
+
+
+    #firstarticle > img {
+        height: 400px;
+        }
+
+
+    .id1 {
+        display: block;
+        text-align: center;
+        margin-right: 10%;
+        font-size: smaller;
+        font-weight: bold
+        }
+
+
+    .id2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: smaller;
+        font-weight: bold;
+        }
+        
+
+    .id3 {
+        display: block;
+        text-align: center;
+        font-size: smaller;
+        font-weight: bold;
+        }
+
+}
+
+/* For Nexus 5 */
+
+
+
+@media only screen and (max-width : 360px)
+{
+
+    .container {
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: column;
+        }
+
+
+    .logo {
+        width: 75%;
+        }
+
+
+    .orientation {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -20px;
+        }
+
+
+    #img1 {                 
+        width: 80%;
+        padding-top: 10px;
+        }
+
+
+    .names {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1.6;
+        padding-top: 15px;
+        }
+
+
+    #h1fontchange {
+        font-size: 1.3em;
+        }
+    
+
+    #h3fontchange {
+        font-size: 1em;
+        }
+
+
+    .imgsize {
+        max-width: 100%;
+        border-radius: 40px;
+        }
+
+
+    .id3 {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        font-size: large;
+        font-weight: bold;
+        }
+
+
+    #h2alignment {
+        text-align: center;
+        }
+
+
+    #img2 {
+        border-radius: 20px;
+        width: 100%;
+        height: 300px;
+        }
+}
